@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 10rem;
+    height: 3rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+
+    li:hover {
+      cursor: pointer;
+      color: rgb(222, 104, 0);
+    }
+  }
+}
