@@ -44,3 +44,14 @@
     cursor: pointer;
   }
 }
+
+.h2 {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+}
