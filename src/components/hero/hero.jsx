@@ -7,23 +7,33 @@ import calories from '../../assets/calories.png';
 
 import './hero.scss';
 
+import { motion } from 'framer-motion';
+
 const Hero = () => {
+  const transition = { type: 'spring', duration: 3 };
   return (
     <div className="hero">
+      <div className="blur blur-h"></div>
       <div className="left-side">
         <Header />
 
-        <div className="the-best-ad">
-          <div></div>
+        <div className="the-best-ad" id="css">
+          <motion.div
+            initial={{ left: '238px' }}
+            whileInView={{ left: '8px' }}
+            transition={transition}
+          />
           <span>the best fitness club in the town</span>
         </div>
 
         <div className="hero-text">
-          <div>
-            <span className="stroke-text">Shape</span>
-            <span> your</span>
-            <div>
-              <span>ideal body</span>
+          <div className="">
+            <div className="pidor">
+              <span className="stroke-text">Shape</span>
+              <span> your</span>
+              <div>
+                <span>ideal body</span>
+              </div>
             </div>
             <div className="span">
               In here we help you yo shape and build your ideal body live up your life to fullset
@@ -53,21 +63,31 @@ const Hero = () => {
       <div className="right-side">
         <button className="btn">Join Now</button>
 
-        <div className="heart-rate">
+        <motion.div
+          className="heart-rate"
+          transition={transition}
+          initial={{ right: '5rem' }}
+          whileInView={{ right: '3rem' }}
+        >
           <img src={heart} alt="heart" />
           <span>Heart Rate</span> <span>116 bpm</span>
-        </div>
+        </motion.div>
 
         <img className="hero" src={hero} alt="hero" />
         <img className="hero_back" src={hero_back} alt="hero_back" />
 
-        <div className="calories">
+        <motion.div
+          className="calories"
+          transition={transition}
+          whileInView={{ left: '-16rem' }}
+          initial={{ left: '-4rem' }}
+        >
           <img src={calories} alt="" />
           <div className="">
             <span>Calories Burned</span>
             <span>220 kcal</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

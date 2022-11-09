@@ -4,8 +4,10 @@ import Programs from './components/programs/programs';
 import Reasons from './components/reasons/reasons';
 import Plans from './components/plans/plans';
 import Testimonials from './components/testimonials/testimonials';
+import Join from './components/join/join';
 
 import './App.scss';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Reasons />
       <Plans />
       <Testimonials />
+      <Join />
+      <Footer />
     </div>
   );
 }

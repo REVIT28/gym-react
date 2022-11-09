@@ -23,6 +23,8 @@
 }
 
 .stroke-text {
+  text-transform: uppercase;
+  font-weight: bold;
   color: transparent;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-stroke-width: 1px;
@@ -30,7 +32,6 @@
 }
 
 .btn {
-  margin-top: 20px;
   background-color: white;
   padding: 0.5rem;
   font-weight: bold;
@@ -54,4 +55,21 @@
   color: white;
   text-transform: uppercase;
   font-style: italic;
+}
+.h3 {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+
+  color: white;
+  text-transform: uppercase;
+}
+
+.blur {
+  background: rgba(253, 120, 43, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -1;
 }
