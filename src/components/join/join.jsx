@@ -20,7 +20,7 @@ const Join = () => {
 
   return (
     <div className="Join">
-      <div className="left-j">
+      <div className="left-j" id="oo">
         <hr />
         <div>
           <span className="stroke-text">ready to</span>

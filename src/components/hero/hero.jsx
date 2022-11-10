@@ -4,22 +4,24 @@ import hero from '../../assets/hero_image.png';
 import hero_back from '../../assets/hero_image_back.png';
 import heart from '../../assets/heart.png';
 import calories from '../../assets/calories.png';
-
+import NumberCounter from 'number-counter';
 import './hero.scss';
 
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   const transition = { type: 'spring', duration: 3 };
+
+  const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blur blur-h"></div>
       <div className="left-side">
         <Header />
 
         <div className="the-best-ad" id="css">
           <motion.div
-            initial={{ left: '238px' }}
+            initial={{ left: mobile ? '178px' : '238px' }}
             whileInView={{ left: '8px' }}
             transition={transition}
           />
@@ -41,15 +43,22 @@ const Hero = () => {
           </div>
           <div className="figures">
             <div className="">
-              <span>+140</span>
+              <span>
+                <NumberCounter end={140} start={127} delay="4" preFix="+" />
+              </span>
               <span>expert coach</span>
             </div>
             <div className="">
-              <span>+978</span>
+              <span>
+                <NumberCounter end={978} start={960} delay="4" preFix="+" />
+              </span>
+
               <span>members joined</span>
             </div>
             <div className="">
-              <span>+50</span>
+              <span>
+                <NumberCounter end={50} start={40} delay="4" preFix="+" />
+              </span>
               <span>fitness programs</span>
             </div>
           </div>
@@ -79,8 +88,8 @@ const Hero = () => {
         <motion.div
           className="calories"
           transition={transition}
-          whileInView={{ left: '-16rem' }}
-          initial={{ left: '-4rem' }}
+          whileInView={{ left: mobile ? '1rem' : '-16rem' }}
+          initial={{ left: mobile ? '5rem' : '-4rem' }}
         >
           <img src={calories} alt="" />
           <div className="">

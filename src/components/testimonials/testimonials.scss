@@ -79,4 +79,45 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .left-t {
+      justify-content: center;
+      text-align: center;
+      width: 300px;
+      gap: 1rem;
+    }
+
+    .right-t {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      div {
+        position: relative;
+        display: none;
+      }
+
+      img {
+        position: relative;
+        top: 0;
+        right: 0.6rem;
+        margin: 10px;
+
+        align-self: center;
+      }
+
+      > :last-child {
+        display: block;
+        bottom: -3rem;
+        left: 7rem;
+        margin: 0 auto;
+      }
+    }
+  }
 }

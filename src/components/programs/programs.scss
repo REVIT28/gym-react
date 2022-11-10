@@ -1,4 +1,19 @@
 .Programs {
+  @media (max-width: 768px) {
+    .h2 {
+      margin-top: 150px;
+      flex-direction: column;
+      margin-top: 150px;
+      gap: 1rem;
+      text-align: center;
+      font-size: x-large;
+    }
+    #categories {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -28,7 +43,6 @@
     gap: 1rem;
     color: white;
     justify-content: space-between;
-    margin-bottom: 40px;
 
     &:hover {
       background-color: var(--orange);

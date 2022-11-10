@@ -58,7 +58,6 @@
         font-weight: 200;
         text-transform: none;
         letter-spacing: 1px;
-        width: 70%;
       }
 
       .span {
@@ -204,12 +203,23 @@
         width: 14rem;
       }
 
+      .figures {
+        div {
+          font-size: 1.5rem;
+        }
+      }
+
       .the-best-ad {
         margin-top: 0;
         font-size: small;
         align-self: center;
 
         transform: scale(0.8);
+      }
+
+      .hero-text {
+        justify-self: center;
+        text-align: center;
       }
 
       #css {
@@ -226,6 +236,38 @@
         text-align: center;
         letter-spacing: 1px;
         font-size: 4.5rem;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .right-side {
+        position: relative;
+        background: none;
+
+        .heart-rate {
+          left: 1rem;
+          top: 1rem;
+        }
+
+        .calories {
+          position: relative;
+          left: 5rem;
+          top: 13rem;
+        }
+
+        .hero {
+          position: relative;
+          width: 15rem;
+          left: 7rem;
+          top: 12rem;
+        }
+
+        .hero_back {
+          width: 15rem;
+          left: 2rem;
+        }
       }
     }
   }

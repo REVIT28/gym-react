@@ -12,8 +12,8 @@ import './reasons.scss';
 
 const Reasons = () => {
   return (
-    <div className="Reason">
-      <div className="left-r">
+    <div className="Reason" id="reasons">
+      <div className="left-r" id="left">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
         <img src={image3} alt="" />
@@ -22,8 +22,8 @@ const Reasons = () => {
       <div className="right-r">
         <span className="span-right">some reasons</span>
 
-        <div className="">
-          <span className="stroke-text">why</span>
+        <div id="right-h">
+          <span className="stroke-text">why </span>
           <span>choose us?</span>
         </div>
 
@@ -44,8 +44,10 @@ const Reasons = () => {
             <img src={tick} alt="" />
             <span>RELIABLE PARTNERS</span>
           </div>
-          <div className="" />
-          <span style={{ color: 'var(--gray)', fontWeight: 'normal' }}>OUR PARTNERS</span>
+          <div />
+          <span id="partners" style={{ color: 'var(--gray)', fontWeight: 'normal' }}>
+            OUR PARTNERS
+          </span>
           <div className="partners">
             <img src={nb} alt="" />
             <img src={adidas} alt="" />

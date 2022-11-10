@@ -1,4 +1,49 @@
 .Reason {
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    #left {
+      overflow: hidden;
+
+      :nth-child(1) {
+        width: 7rem;
+        height: 17rem;
+      }
+      :nth-child(2) {
+        width: 15rem;
+        height: 10rem;
+      }
+      :nth-child(3) {
+        width: 7rem;
+      }
+      :nth-child(4) {
+        width: 7rem;
+        height: 6rem;
+      }
+    }
+
+    .span-right {
+      justify-content: center;
+      text-align: center;
+    }
+
+    #right-h {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #partners {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   padding: 0 2rem;
   display: flex;
   grid-template: 2rem;
